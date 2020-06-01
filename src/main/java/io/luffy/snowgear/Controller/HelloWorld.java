@@ -1,6 +1,6 @@
 package io.luffy.snowgear.Controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorld {
 
   @ResponseBody
-  @RequestMapping(path = "/hello")
+  @GetMapping(path = "/hello")
   public String hello(){
     return "Hello, this is snowgear server. Happy developing/skiiing/snowboarding.";
   }
